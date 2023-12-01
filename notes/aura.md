@@ -5,7 +5,7 @@
 #### Links
 [GitHub](https://github.com/fosskers/aura)
 [Docs](https://fosskers.github.io/aura/introduction.html)
-[config](configs/aura.config)
+[config](../configs/aura.conf)
 
 #### Useful commands
 
