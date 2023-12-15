@@ -1,0 +1,13 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/kitty: 
+      create: true
+      path: configs/kitty
+
+- shell:
+  - [git submodule update --init --recursive, Installing dotbot]

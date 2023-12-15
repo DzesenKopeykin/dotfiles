@@ -11,7 +11,6 @@ You will need `git` and GNU `stow`
 Clone into your `$HOME` directory
 
 ```bash
-cd
 git clone git@github.com:DzesenKopeykin/configs.git configs-git
 ```
 
