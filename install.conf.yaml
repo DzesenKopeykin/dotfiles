@@ -2,12 +2,19 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean:
+    ~/:
+    ~/.config:
 
 - link:
     ~/.config/kitty: 
-      create: true
       path: configs/kitty
 
 - shell:
-  - [git submodule update --init --recursive, Installing dotbot]
+  - 
+    command: git submodule update --init --recursive
+    description: Installing dotbot
+    stdout: true
+  -
+    command: sudo chsh -s $(which zsh)
+    description: Making zsh the default shell
