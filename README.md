@@ -18,11 +18,6 @@ git clone git@github.com:DzesenKopeykin/configs.git configs-git
 Run `stow` to symlink everything
 
 ```bash
-stow */ # the '/' ignores the README
-```
-
-Or just select what you want
-```bash
-stow kitty
+stow kitty --dir=./stow_dir --target=$HOME
 ```
 
