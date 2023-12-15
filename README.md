@@ -4,19 +4,8 @@
 
 ## Installing
 
-I stole the idea from [ChristianChiarulli](https://github.com/ChristianChiarulli/Machfiles)
-
-You will need `git` and GNU `stow`
+You will need only `git`
 
 Clone into your `$HOME` directory
 
-```bash
-git clone git@github.com:DzesenKopeykin/configs.git configs-git
-```
-
-Run `stow` to symlink everything
-
-```bash
-stow kitty --dir=./stow_dir --target=$HOME
-```
-
+And run `./install`
