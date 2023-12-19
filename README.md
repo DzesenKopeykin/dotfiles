@@ -1,11 +1,19 @@
 <img width=150 height=50 align=right src="https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png">
 
-# My Arch Linux Configs
+# Dotfiles
 
 ## Installing
 
-You will need only `git`
+These dotfiles use [Dotbot](https://github.com/anishathalye/dotbot) for installation.
 
-Clone into your `$HOME` directory
+## Dependencies
 
-And run `./install`
+* `git`
+
+## Installation
+
+```bash
+./install -c personal.conf.yaml
+```
+
+You can run these installation command safely multiple times.
