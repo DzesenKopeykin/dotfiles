@@ -17,3 +17,8 @@ These dotfiles use [Dotbot](https://github.com/anishathalye/dotbot) for installa
 ```
 
 You can run these installation command safely multiple times.
+
+## List of modules
+
+Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
+Shell: [zsh](https://www.zsh.org/)

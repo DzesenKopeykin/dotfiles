@@ -12,6 +12,8 @@
       path: ""
     ~/.config/kitty: 
       path: configs/kitty
+    ~/.zshrc:
+      path: configs/zsh/.zshrc
 
 - shell:
   - 
