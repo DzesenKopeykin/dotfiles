@@ -13,7 +13,7 @@ These dotfiles use [Dotbot](https://github.com/anishathalye/dotbot) for installa
 ## Installation
 
 ```bash
-./install -c personal.conf.yaml
+./install
 ```
 
 You can run these installation command safely multiple times.
