@@ -8,3 +8,6 @@
 [submodule "plugins/zsh/zsh-autosuggestions"]
 	path = plugins/zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "plugins/zsh/zsh-history-substring-search"]
+	path = plugins/zsh/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search.git
