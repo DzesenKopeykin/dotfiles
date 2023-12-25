@@ -14,6 +14,8 @@
       path: configs/kitty
     ~/.zshrc:
       path: configs/zsh/.zshrc
+    ~/.config/starship.toml:
+      path: configs/starship/starship.toml
 
 - shell:
   - 

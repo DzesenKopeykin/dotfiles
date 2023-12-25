@@ -1,0 +1,119 @@
+add_newline = false
+
+# characters to draw lines ╭ │ ╰ ─
+# characters for prompt 󱞪 󰘍 󰮶 󰨃 󰫎 󰋇 󰛒 󰶻 󰄾 󰁕 󰜴      󰔰 󱅥 󱎯 󱓞 󰼛 󰮺 󰘁 󰮯 󱣰 󱐋 󰫍 󰥭 󰈽 󰮙 󰈼 󰈿 󰞷 󰅹󰅂 󰁔         󰒊 󰐊 󰊍        
+format = """
+$line_break\
+$os\
+$fill\
+$memory_usage\
+$battery\
+$cmd_duration\
+$time\
+$line_break\
+$line_break\
+$directory\
+$line_break\
+$python\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$line_break\
+[ ](green)
+"""
+
+[os]
+style = 'bold blue'
+disabled = false
+
+[os.symbols]
+Arch = '󰣇 '
+Linux = '󰌽 '
+Macos = ' '
+
+[fill]
+symbol = '─'
+style = 'blue'
+
+[memory_usage]
+threshold = 50
+format = ' [$symbol $ram\($ram_pct\)( $swap\($swap_pct\))]($style)'
+symbol = '󰍛'
+style = 'italic white'
+disabled = false
+
+[battery]
+format = '[ $symbol$percentage]($style)'
+disabled = false
+
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+discharging_symbol = "󱊡 "
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+discharging_symbol = "󰂎 "
+
+[cmd_duration]
+min_time = 10_000
+format = '[ 󱦟 $duration]($style)'
+style = 'red'
+show_notifications = true
+min_time_to_notify = 60_000
+disabled = false
+
+[time]
+format = '[ $time]($style)'
+disabled = false
+
+[directory]
+format = '[󰉓]($style) [$read_only]($read_only_style)[$path]($style) '
+style = 'bold blue'
+truncation_length = 10
+truncate_to_repo = false
+read_only = ' '
+truncation_symbol = '󰦩 '
+before_repo_root_style = 'bold cyan'
+repo_root_style = 'bold purple'
+repo_root_format = '[󰉓]($style) [$read_only]($read_only_style)[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style) '
+disabled = false
+
+[python]
+format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+symbol = ''
+style = 'yellow'
+disabled = false
+
+[git_branch]
+always_show_remote = false
+format = '[$symbol $branch(:$remote_branch)]($style) '
+style = 'purple'
+symbol = ''
+truncation_length = 16
+truncation_symbol = '…'
+disabled = false
+
+[git_state]
+disabled = false
+
+[git_status]
+format = '($conflicted )($stashed )($deleted )($renamed )($modified )($staged )($untracked )($ahead_behind )'
+conflicted = '[󱐋$count](red)'
+ahead = '[$count](green)'
+behind = '[$count](green)'
+diverged = '[󰹺$count](red)'
+untracked = '[?$count](white)'
+stashed = '[$count](blue)'
+modified = '[!$count](red)'
+staged = '[$count](green)'
+renamed = '[󰴓$count](red)'
+deleted = '[󰗨$count](red)'
+disabled = false
+
+[git_metrics]
+format = '(([$added]($added_style))([✘$deleted]($deleted_style)) )' 
+disabled = false
+
