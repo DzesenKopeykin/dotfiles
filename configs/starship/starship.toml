@@ -1,30 +1,26 @@
-add_newline = false
-
 # characters to draw lines ╭ │ ╰ ─
 # characters for prompt 󱞪 󰘍 󰮶 󰨃 󰫎 󰋇 󰛒 󰶻 󰄾 󰁕 󰜴      󰔰 󱅥 󱎯 󱓞 󰼛 󰮺 󰘁 󰮯 󱣰 󱐋 󰫍 󰥭 󰈽 󰮙 󰈼 󰈿 󰞷 󰅹󰅂 󰁔         󰒊 󰐊 󰊍        
 format = """
-$line_break\
 $os\
 $fill\
 $memory_usage\
 $battery\
 $cmd_duration\
 $time\
-$line_break\
-$line_break\
+\n\n\
 $directory\
-$line_break\
+(\n\
 $python\
 $git_branch\
 $git_state\
 $git_status\
-$git_metrics\
-$line_break\
+$git_metrics)\
+\n\
 [ ](green)
 """
 
 [os]
-style = 'bold blue'
+style = 'blue'
 disabled = false
 
 [os.symbols]
@@ -49,12 +45,12 @@ disabled = false
 
 [[battery.display]]
 threshold = 30
-style = "bold yellow"
+style = "yellow"
 discharging_symbol = "󱊡 "
 
 [[battery.display]]
 threshold = 10
-style = "bold red"
+style = "red"
 discharging_symbol = "󰂎 "
 
 [cmd_duration]
@@ -67,6 +63,7 @@ disabled = false
 
 [time]
 format = '[ $time]($style)'
+style = 'blue'
 disabled = false
 
 [directory]
@@ -104,7 +101,7 @@ format = '($conflicted )($stashed )($deleted )($renamed )($modified )($staged )(
 conflicted = '[󱐋$count](red)'
 ahead = '[$count](green)'
 behind = '[$count](green)'
-diverged = '[󰹺$count](red)'
+diverged = '[$ahead_count](green)[$behind_count](red)'
 untracked = '[?$count](white)'
 stashed = '[$count](blue)'
 modified = '[!$count](red)'
