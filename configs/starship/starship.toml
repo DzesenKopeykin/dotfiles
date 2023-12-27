@@ -89,7 +89,7 @@ always_show_remote = false
 format = '[$symbol $branch(:$remote_branch)]($style) '
 style = 'purple'
 symbol = ''
-truncation_length = 16
+truncation_length = 24
 truncation_symbol = '…'
 disabled = false
 
