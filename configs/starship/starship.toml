@@ -54,11 +54,11 @@ style = "red"
 discharging_symbol = "󰂎 "
 
 [cmd_duration]
-min_time = 10_000
+min_time = 10_000 # 10s
 format = '[ 󱦟 $duration]($style)'
 style = 'red'
 show_notifications = true
-min_time_to_notify = 60_000
+min_time_to_notify = 600_000 # 10m
 disabled = false
 
 [time]
