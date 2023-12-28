@@ -36,6 +36,11 @@ alias gpll="git pull"
 
 
 
+export GROFF_NO_SGR=1
+export LESS="--RAW-CONTROL-CHARS --use-color --color=Pyb$ --color=Sg$ --color=d+b$ --color=k+y$ --color=s+r$ --color=u+g$"
+
+
+
 # Plug in plugins ;)
 
 # zsh-autosuggestions

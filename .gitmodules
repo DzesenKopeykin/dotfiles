@@ -11,3 +11,6 @@
 [submodule "plugins/zsh/zsh-history-substring-search"]
 	path = plugins/zsh/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
+[submodule "plugins/zsh/zsh-colored-man-pages"]
+	path = plugins/zsh/zsh-colored-man-pages
+	url = https://github.com/ael-code/zsh-colored-man-pages.git
