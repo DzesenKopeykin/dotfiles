@@ -35,6 +35,17 @@ alias gpull="git pull"
 
 
 export GROFF_NO_SGR=1
+export LESS=\
+"--RAW-CONTROL-CHARS "\
+"--use-color "\
+"--color=My$ "\
+"--color=Pyb$ "\
+"--color=Sy$ "\
+"--color=d+b$ "\
+"--color=k+y$ "\
+"--color=s+r$ "\
+"--color=u+g$ "\
+"--status-column "
 
 
 
