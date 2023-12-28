@@ -21,6 +21,19 @@ function dockerps {
     docker ps $@ --format '{ "ID":"{{.ID}}", "Names":"{{.Names}}", "Status":"{{.Status}}", "State":"{{.State}}", "Size":"{{.Size}}", "Networks":"{{.Networks}}", "Ports":"{{.Ports}}", "CreatedAt":"{{.CreatedAt}}" }' | jq
 }
 
+alias gstt="git status"
+alias gdif="git diff"
+alias glog="git log --graph --oneline --all --date-order"
+alias grst="git restore $1"
+alias grsts="git restore --staged $1"
+alias gchk="git checkout $1"
+alias gmrg="git merge"
+alias gadd="git add $1"
+alias gcmt="git commit -m $1"
+alias gpsh="git push"
+alias gpshf="git push -f"
+alias gpll="git pull"
+
 
 
 # Plug in plugins ;)
