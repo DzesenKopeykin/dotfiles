@@ -10,6 +10,11 @@ source /usr/share/nvm/init-nvm.sh
 eval "$(starship init zsh)"
 
 
+
+alias confzsh="nvim $HOME/.dotfiles/configs/zsh/.zshrc"
+alias confstarship="nvim $HOME/.dotfiles/configs/starship/starship.toml"
+alias confkitty="nvim $HOME/.dotfiles/configs/kitty/kitty.conf"
+
 alias ls="ls --color=auto"
 alias lsal="ls -al"
 function dockerps {
