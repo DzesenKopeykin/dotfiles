@@ -21,23 +21,20 @@ function dockerps {
     docker ps $@ --format '{ "ID":"{{.ID}}", "Names":"{{.Names}}", "Status":"{{.Status}}", "State":"{{.State}}", "Size":"{{.Size}}", "Networks":"{{.Networks}}", "Ports":"{{.Ports}}", "CreatedAt":"{{.CreatedAt}}" }' | jq
 }
 
-alias gstt="git status"
-alias gdif="git diff"
+alias gstatus="git status"
+alias gdiff="git diff"
 alias glog="git log --graph --oneline --all --date-order"
-alias grst="git restore $1"
-alias grsts="git restore --staged $1"
-alias gchk="git checkout $1"
-alias gmrg="git merge"
-alias gadd="git add $1"
-alias gcmt="git commit -m $1"
-alias gpsh="git push"
-alias gpshf="git push -f"
-alias gpll="git pull"
+alias grestore="git restore"
+alias gcheckout="git checkout"
+alias gmerge="git merge"
+alias gadd="git add"
+alias gcommit="git commit -m"
+alias gpush="git push"
+alias gpull="git pull"
 
 
 
 export GROFF_NO_SGR=1
-export LESS="--RAW-CONTROL-CHARS --use-color --color=Pyb$ --color=Sg$ --color=d+b$ --color=k+y$ --color=s+r$ --color=u+g$"
 
 
 
