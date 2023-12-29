@@ -10,6 +10,14 @@ source /usr/share/nvm/init-nvm.sh
 eval "$(starship init zsh)"
 
 
+unsetopt hist_save_by_copy
+unsetopt inc_append_history
+setopt share_history
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+
 
 alias confzsh="nvim $HOME/.dotfiles/configs/zsh/.zshrc"
 alias confstarship="nvim $HOME/.dotfiles/configs/starship/starship.toml"
@@ -54,12 +62,12 @@ export LESS=\
 # zsh-autosuggestions
 # source $HOME/.dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# zsh-history-substring-search
-source $HOME/.dotfiles/plugins/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
-
 #zsh-syntax-highlighting
 # plug in syntax highlighting at the end of .zshrc
 source $HOME/.dotfiles/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh-history-substring-search
+source $HOME/.dotfiles/plugins/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 
 
