@@ -60,7 +60,7 @@ export LESS=\
 # Plug in plugins ;)
 
 # zsh-autosuggestions
-# source $HOME/.dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #zsh-syntax-highlighting
 # plug in syntax highlighting at the end of .zshrc
