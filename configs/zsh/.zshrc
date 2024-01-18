@@ -59,19 +59,28 @@ export LESS=\
 
 # Plug in plugins ;)
 
+# zsh-vi-mode
+source $HOME/.dotfiles/plugins/zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+ZVM_VI_SURROUND_BINDKEY=s-prefix
+ZVM_VI_HIGHLIGHT_FOREGROUND=yellow
+ZVM_VI_HIGHLIGHT_BACKGROUND=blue
+
+# zsh-autocomplete
+# source $HOME/.dotfiles/plugins/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 # zsh-autosuggestions
-source $HOME/.dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source $HOME/.dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #zsh-syntax-highlighting
 # plug in syntax highlighting at the end of .zshrc
 source $HOME/.dotfiles/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-history-substring-search
-source $HOME/.dotfiles/plugins/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+# source $HOME/.dotfiles/plugins/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 
 
 # Key bindings
 
-bindkey '^K' history-substring-search-up
-bindkey '^J' history-substring-search-down
+# bindkey '^K' history-substring-search-up
+# bindkey '^J' history-substring-search-down

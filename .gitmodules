@@ -14,3 +14,9 @@
 [submodule "plugins/zsh/zsh-colored-man-pages"]
 	path = plugins/zsh/zsh-colored-man-pages
 	url = https://github.com/ael-code/zsh-colored-man-pages.git
+[submodule "plugins/zsh/zsh-autocomplete"]
+	path = plugins/zsh/zsh-autocomplete
+	url = https://github.com/marlonrichert/zsh-autocomplete.git
+[submodule "plugins/zsh/zsh-vi-mode"]
+	path = plugins/zsh/zsh-vi-mode
+	url = https://github.com/jeffreytse/zsh-vi-mode.git
