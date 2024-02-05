@@ -16,6 +16,10 @@
       path: configs/zsh/.zshrc
     ~/.config/starship.toml:
       path: configs/starship/starship.toml
+    ~/.config/qutebrowser/config.py:
+      path: configs/qutebrowser/config.py
+    ~/.local/share/qutebrowser/userscripts/translate:
+      path: configs/qutebrowser/userscripts/translate
 
 - shell:
   - 
@@ -24,4 +28,7 @@
     stdout: true
   -
     command: sudo chsh -s $(which zsh)
-    description: Making zsh the default shell
+    description: Make zsh the default shell
+  -
+    command: chmod +x ~/.local/share/qutebrowser/userscripts/translate
+    description: Make qutebrowser scripts executable
