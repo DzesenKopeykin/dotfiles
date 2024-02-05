@@ -76,11 +76,11 @@ ZVM_VI_HIGHLIGHT_BACKGROUND=blue
 source $HOME/.dotfiles/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-history-substring-search
-# source $HOME/.dotfiles/plugins/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOME/.dotfiles/plugins/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 
 
 # Key bindings
 
-# bindkey '^K' history-substring-search-up
-# bindkey '^J' history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
