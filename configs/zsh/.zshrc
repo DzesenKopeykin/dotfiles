@@ -52,9 +52,6 @@ ZVM_VI_SURROUND_BINDKEY=s-prefix
 ZVM_VI_HIGHLIGHT_FOREGROUND=yellow
 ZVM_VI_HIGHLIGHT_BACKGROUND=blue
 
-# zsh-autocomplete
-source $HOME/.dotfiles/plugins/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
 # zsh-autosuggestions
 source $HOME/.dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 

@@ -11,9 +11,6 @@
 [submodule "plugins/zsh/zsh-history-substring-search"]
 	path = plugins/zsh/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
-[submodule "plugins/zsh/zsh-autocomplete"]
-	path = plugins/zsh/zsh-autocomplete
-	url = https://github.com/marlonrichert/zsh-autocomplete.git
 [submodule "plugins/zsh/zsh-vi-mode"]
 	path = plugins/zsh/zsh-vi-mode
 	url = https://github.com/jeffreytse/zsh-vi-mode.git
