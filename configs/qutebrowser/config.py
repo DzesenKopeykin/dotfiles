@@ -37,7 +37,7 @@ c.keyhint.delay = 0
 c.keyhint.radius = 20
 
 c.scrolling.bar = "always"
-c.scrolling.smooth = True
+c.scrolling.smooth = False
 
 c.statusbar.padding = {"bottom": 5, "left": 2, "right": 2, "top": 5}
 c.statusbar.widgets = ["search_match", "keypress", "progress", "history", "url"]
@@ -53,6 +53,8 @@ c.url.start_pages = ["https://translate.google.com/", "https://start.duckduckgo.
 
 c.window.hide_decoration = True
 
-c.zoom.default = "110%"
+c.zoom.default = "120%"
+
+c.content.javascript.clipboard = "access"
 
 config.load_autoconfig(False)
