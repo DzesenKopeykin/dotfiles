@@ -6,10 +6,18 @@
 - clean:
     ~/:
     ~/.config:
+    /etc/lemurs:
 
 - link:
     ~/.dotfiles:
       path: ""
+    /etc/lemurs/wms:
+      path: configs/lemurs/wms
+    /etc/lemurs/wayland:
+      path: configs/lemurs/wayland
+    /etc/lemurs/config.toml:
+      force: true
+      path: configs/lemurs/config.toml
     ~/.config/kitty: 
       path: configs/kitty
     ~/.zshrc:
@@ -32,3 +40,9 @@
   -
     command: chmod +x ~/.local/share/qutebrowser/userscripts/translate
     description: Make qutebrowser scripts executable
+  -
+    command: sudo chmod 755 /etc/lemurs/wms/xfce
+    description: Make xfce init executable
+  -
+    command: sudo chmod 755 /etc/lemurs/wms/qtile
+    description: Make qtile init executable
