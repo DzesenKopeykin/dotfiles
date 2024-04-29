@@ -1,8 +1,6 @@
-# Set up virtualenvwrapper
-export WORKON_HOME=$HOME/.virtualenvs
-# export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
-# source /usr/bin/virtualenvwrapper_lazy.sh
-source /usr/bin/virtualenvwrapper.sh
+PATH=$HOME/.local/bin:$PATH
+
+export PIPENV_VENV_IN_PROJECT=1
 
 # Set up Node Version Manager
 source /usr/share/nvm/init-nvm.sh
@@ -18,30 +16,19 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 
-
 alias confzsh="nvim $HOME/.dotfiles/configs/zsh/.zshrc"
 alias confstarship="nvim $HOME/.dotfiles/configs/starship/starship.toml"
 alias confkitty="nvim $HOME/.dotfiles/configs/kitty/kitty.conf"
 alias confqutebrowser="nvim $HOME/.dotfiles/configs/qutebrowser/config.py"
+
+alias apv="source .venv/bin/activate"
+alias dpv="deactivate"
 
 alias ls="ls --color=auto"
 alias lsal="ls -al"
 function dockerps {
     docker ps $@ --format '{ "ID":"{{.ID}}", "Names":"{{.Names}}", "Status":"{{.Status}}", "State":"{{.State}}", "Size":"{{.Size}}", "Networks":"{{.Networks}}", "Ports":"{{.Ports}}", "CreatedAt":"{{.CreatedAt}}" }' | jq
 }
-
-alias gstatus="git status"
-alias gdiff="git diff"
-alias glog="git log --graph --oneline --all --date-order"
-alias grestore="git restore"
-alias gcheckout="git checkout"
-alias gmerge="git merge"
-alias gadd="git add"
-alias gcommit="git commit -m"
-alias gpush="git push"
-alias gpull="git pull"
-
-
 
 export GROFF_NO_SGR=1
 export LESS=\
@@ -57,7 +44,6 @@ export LESS=\
 "--status-column "
 
 
-
 # Plug in plugins ;)
 
 # zsh-vi-mode
@@ -67,10 +53,10 @@ ZVM_VI_HIGHLIGHT_FOREGROUND=yellow
 ZVM_VI_HIGHLIGHT_BACKGROUND=blue
 
 # zsh-autocomplete
-# source $HOME/.dotfiles/plugins/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source $HOME/.dotfiles/plugins/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # zsh-autosuggestions
-# source $HOME/.dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #zsh-syntax-highlighting
 # plug in syntax highlighting at the end of .zshrc
@@ -78,7 +64,6 @@ source $HOME/.dotfiles/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighti
 
 # zsh-history-substring-search
 source $HOME/.dotfiles/plugins/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
-
 
 
 # Key bindings
