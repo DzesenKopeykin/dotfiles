@@ -1,0 +1,28 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean:
+    /etc/keyd:
+    /etc/lemurs:
+
+- link:
+    /etc/keyd/default.conf:
+      path: configs/keyd/default.conf
+    /etc/lemurs/wms:
+      path: configs/lemurs/wms
+    /etc/lemurs/config.toml:
+      force: true
+      path: configs/lemurs/config.toml
+
+- shell:
+  -
+    command: sudo chsh -s $(which zsh)
+    description: Make zsh the default shell
+  -
+    command: sudo chmod 755 /etc/lemurs/wms/xfce
+    description: Make xfce init executable
+  -
+    command: sudo chmod 755 /etc/lemurs/wms/qtile
+    description: Make qtile init executable

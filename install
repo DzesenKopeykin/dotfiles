@@ -2,7 +2,13 @@
 
 set -e
 
-CONFIG="install.conf.yaml"
+if [[ "$(whoami)" = 'root' ]]
+then
+    CONFIG="install.root.conf.yaml"
+else
+    CONFIG="install.conf.yaml"
+fi
+
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
