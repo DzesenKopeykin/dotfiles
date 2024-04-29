@@ -28,6 +28,8 @@
       path: configs/qutebrowser/config.py
     ~/.local/share/qutebrowser/userscripts/translate:
       path: configs/qutebrowser/userscripts/translate
+    ~/.config/rofi/config.rasi:
+      path: configs/rofi/config.rasi
 
 - shell:
   - 
