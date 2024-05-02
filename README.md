@@ -14,6 +14,7 @@ These dotfiles use [Dotbot](https://github.com/anishathalye/dotbot) for installa
 
 ```bash
 ./install
+sudo ./install
 ```
 
 You can run these installation command safely multiple times.
@@ -22,3 +23,4 @@ You can run these installation command safely multiple times.
 
 Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
 Shell: [zsh](https://www.zsh.org/)
+Display/Login manager: [sddm](https://github.com/sddm/sddm)
