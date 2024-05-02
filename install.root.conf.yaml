@@ -5,19 +5,11 @@
 
 - clean:
     /etc/keyd:
-    /etc/lemurs:
     /etc/sddm.conf.d:
 
 - link:
     /etc/keyd/default.conf:
       path: configs/keyd/default.conf
-    /etc/lemurs/wms:
-      path: configs/lemurs/wms
-    /etc/lemurs/variables.toml:
-      path: configs/lemurs/variables.toml
-    /etc/lemurs/config.toml:
-      force: true
-      path: configs/lemurs/config.toml
     /etc/sddm.conf.d/sddm.conf:
       path: configs/sddm/sddm.conf
 
@@ -25,7 +17,3 @@
     - command: sudo chsh -s $(which zsh)
       description: Make zsh the default shell
     - command: sudo rm -rf /usr/share/sddm/themes/light-theme && sudo cp -r configs/sddm/themes/light-theme /usr/share/sddm/themes/light-theme
-    - command: sudo chmod 755 /etc/lemurs/wms/xfce
-      description: Make xfce init executable
-    - command: sudo chmod 755 /etc/lemurs/wms/qtile
-      description: Make qtile init executable
