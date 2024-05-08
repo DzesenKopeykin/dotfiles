@@ -14,6 +14,7 @@
       path: configs/sddm/sddm.conf
 
 - shell:
+    - command: sudo keyd reload
     - command: sudo chsh -s $(which zsh)
-      description: Make zsh the default shell
-    - command: sudo rm -rf /usr/share/sddm/themes/light-theme && sudo cp -r configs/sddm/themes/light-theme /usr/share/sddm/themes/light-theme
+    - command: sudo rm -rf /usr/share/sddm/themes/light-theme
+    - command: sudo cp -r configs/sddm/themes/light-theme /usr/share/sddm/themes/light-theme
