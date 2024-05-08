@@ -1,0 +1,10 @@
+{
+  "keyMappings": "map H previousTab\nmap L nextTab\nmap K goBack\nmap J goForward",
+  "linkHintCharacters": "asdfghjkl",
+  "newTabUrl": "https://www.google.com",
+  "scrollStepSize": 80,
+  "grabBackFocus": true,
+  "searchUrl": "https://duckduckgo.com/?q=",
+  "settingsVersion": "2.1.2",
+  "exclusionRules": []
+}
