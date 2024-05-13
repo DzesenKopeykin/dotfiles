@@ -40,8 +40,7 @@ export LESS=\
 "--color=d+b$ "\
 "--color=k+y$ "\
 "--color=s+r$ "\
-"--color=u+g$ "\
-"--status-column "
+"--color=u+g$ "
 
 
 # Plug in plugins ;)
