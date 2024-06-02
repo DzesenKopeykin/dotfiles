@@ -25,6 +25,8 @@
       path: configs/qutebrowser/userscripts/translate
     ~/.config/rofi/config.rasi:
       path: configs/rofi/config.rasi
+    ~/.config/ptpython/config.py:
+      path: configs/ptpython/config.py
 
 - shell:
   - 
