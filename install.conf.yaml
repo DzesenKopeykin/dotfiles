@@ -10,6 +10,9 @@
 - link:
     ~/.dotfiles:
       path: ""
+    ~/.config/qtile:
+      path: configs/qtile
+      force: true
     ~/.config/kitty: 
       path: configs/kitty
     ~/.zshrc:
