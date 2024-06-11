@@ -36,7 +36,7 @@ style = 'blue'
 threshold = 50
 format = ' [$symbol $ram\($ram_pct\)( $swap\($swap_pct\))]($style)'
 symbol = '󰍛'
-style = 'italic white'
+style = 'italic blue'
 disabled = false
 
 [battery]
@@ -68,13 +68,13 @@ disabled = false
 
 [directory]
 format = '[󰉓]($style) [$read_only]($read_only_style)[$path]($style) '
-style = 'bold blue'
+style = 'blue'
 truncation_length = 10
 truncate_to_repo = false
 read_only = ' '
 truncation_symbol = '󰦩 '
-before_repo_root_style = 'bold cyan'
-repo_root_style = 'bold purple'
+before_repo_root_style = 'blue'
+repo_root_style = 'bold blue'
 repo_root_format = '[󰉓]($style) [$read_only]($read_only_style)[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style) '
 disabled = false
 
@@ -87,7 +87,7 @@ disabled = false
 [git_branch]
 always_show_remote = false
 format = '[$symbol $branch(:$remote_branch)]($style) '
-style = 'purple'
+style = 'white'
 symbol = ''
 truncation_length = 24
 truncation_symbol = '…'
@@ -104,13 +104,15 @@ behind = '[$count](green)'
 diverged = '[$ahead_count](green)[$behind_count](red)'
 untracked = '[?$count](white)'
 stashed = '[$count](blue)'
-modified = '[!$count](red)'
+modified = '[!$count](yellow)'
 staged = '[$count](green)'
-renamed = '[󰴓$count](red)'
-deleted = '[󰗨$count](red)'
+renamed = '[󰴓$count](yellow)'
+deleted = '[󰗨$count](yellow)'
 disabled = false
 
 [git_metrics]
 format = '(([$added]($added_style))([✘$deleted]($deleted_style)) )' 
+added_style='green'
+deleted_style='yellow'
 disabled = false
 
