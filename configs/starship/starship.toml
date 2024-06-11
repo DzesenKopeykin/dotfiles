@@ -74,7 +74,7 @@ truncate_to_repo = false
 read_only = ' '
 truncation_symbol = '󰦩 '
 before_repo_root_style = 'blue'
-repo_root_style = 'bold blue'
+repo_root_style = 'cyan'
 repo_root_format = '[󰉓]($style) [$read_only]($read_only_style)[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style) '
 disabled = false
 
@@ -87,7 +87,7 @@ disabled = false
 [git_branch]
 always_show_remote = false
 format = '[$symbol $branch(:$remote_branch)]($style) '
-style = 'white'
+style = 'purple'
 symbol = ''
 truncation_length = 24
 truncation_symbol = '…'

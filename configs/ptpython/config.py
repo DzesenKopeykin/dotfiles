@@ -8,5 +8,5 @@ def configure(repl):
     repl.enable_dictionary_completion = True
     repl.enable_auto_suggest = True
     repl.vi_mode = True
-    repl.use_code_colorscheme("native")
+    repl.use_code_colorscheme("nord")
     repl.max_brightness = 0.7
