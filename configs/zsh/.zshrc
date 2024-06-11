@@ -35,7 +35,7 @@ export LESS=\
 "--RAW-CONTROL-CHARS "\
 "--use-color "\
 "--color=My$ "\
-"--color=Pyb$ "\
+"--color=Pkg$ "\
 "--color=Sy$ "\
 "--color=d+b$ "\
 "--color=k+y$ "\
