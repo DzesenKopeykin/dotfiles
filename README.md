@@ -8,7 +8,7 @@ These dotfiles use [Dotbot](https://github.com/anishathalye/dotbot) for installa
 
 ## Dependencies
 
-* `git`
+- `git`
 
 ## Installation
 
@@ -19,8 +19,11 @@ sudo ./install
 
 You can run these installation command safely multiple times.
 
-## List of modules
+## Modules
 
-Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
-Shell: [zsh](https://www.zsh.org/)
-Display/Login manager: [sddm](https://github.com/sddm/sddm)
+- Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
+- Shell: [zsh](https://www.zsh.org/)
+- Code editor: [neovim](https://neovim.io/)
+- Display/Login manager: [sddm](https://github.com/sddm/sddm)
+
+* Command line prompt: [Starship](https://starship.rs)

@@ -25,6 +25,8 @@
       path: configs/qutebrowser/userscripts/translate
     ~/.config/rofi/config.rasi:
       path: configs/rofi/config.rasi
+    ~/.config/nvim:
+      path: configs/nvim
     ~/.config/ptpython/config.py:
       path: configs/ptpython/config.py
 
