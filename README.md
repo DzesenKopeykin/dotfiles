@@ -25,5 +25,4 @@ You can run these installation command safely multiple times.
 - Shell: [zsh](https://www.zsh.org/)
 - Code editor: [neovim](https://neovim.io/)
 - Display/Login manager: [sddm](https://github.com/sddm/sddm)
-
-* Command line prompt: [Starship](https://starship.rs)
+- Command line prompt: [Starship](https://starship.rs)

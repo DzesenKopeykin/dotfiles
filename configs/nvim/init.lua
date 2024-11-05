@@ -1,11 +1,7 @@
--- External toools:
--- ripgrep
--- fd
-
 require("globals") 
 require("options")
-require("plugins")
 require("config.lazy")
+require("plugins")
 
 vim.cmd("colorscheme nordic")
 

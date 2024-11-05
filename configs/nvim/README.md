@@ -2,6 +2,7 @@
 
 ## Dependencies
 
+
 - kitty
 - nerd-fonts
 - python
