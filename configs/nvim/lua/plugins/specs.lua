@@ -1,10 +1,45 @@
+local plugin_specs = {
+
+    -- colorscheme
+    {
+        "rebelot/kanagawa.nvim",
+        -- make sure we load this during startup if it is your main colorscheme
+        lazy = false,
+        -- make sure to load this before all the other start plugins
+        priority = 1000
+    },
+
+    -- auto-complition engine
+    {
+        "iguanacucumber/magazine.nvim",
+        name = "nvim-cmp",
+        -- event = 'InsertEnter',
+        event = "VeryLazy",
+        dependencies = {
+          "hrsh7th/cmp-nvim-lsp",
+          "onsails/lspkind-nvim",
+          "hrsh7th/cmp-path",
+          "hrsh7th/cmp-buffer",
+          "hrsh7th/cmp-omni",
+          "quangnguyen30192/cmp-nvim-ultisnips",
+        },
+        config = function()
+          require("config.nvim-cmp")
+        end,
+    }
+}
 require("lazy").setup({
     {
         -- autocompletion
         "hrsh7th/nvim-cmp",
     },
-	{"AlexvZyl/nordic.nvim"},
-	{"folke/tokyonight.nvim"},
+    {
+        "rebelot/kanagawa.nvim",
+        -- make sure we load this during startup if it is your main colorscheme
+        lazy = false,
+        -- make sure to load this before all the other start plugins
+        priority = 1000
+    },
 	{
 		"smoka7/hop.nvim",
 		version = "v2",

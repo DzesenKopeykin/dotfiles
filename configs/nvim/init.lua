@@ -1,9 +1,9 @@
 require("globals") 
 require("options")
-require("config.lazy")
-require("plugins")
+require("plugins.lazy")
+require("plugins.specs")
 
-vim.cmd("colorscheme nordic")
+vim.cmd("colorscheme kanagawa")
 
 vim.keymap.set("n", "f", function() require("hop").hint_words({current_line_only=true}) end)
 vim.keymap.set("n", "F", function() require("hop").hint_words() end)
