@@ -36,15 +36,21 @@ vim.keymap.set("n", "<leader>tg", builtin.live_grep, { desc="Live Grep"})
 vim.keymap.set("n", "<leader>tb", builtin.buffers, { desc="Buffers"})
 vim.keymap.set("n", "<leader>th", builtin.help_tags, { desc="Help Tags"})
 
+require("mini.icons").setup()
 local which_key = require("which-key")
-which_key.register({
-	t = {
-		name = "Telescope",
-	},
-	f = {
-		name = "Format",
-	},
-}, { prefix = "<leader>" })
+which_key.add(
+    {
+        { "<leader>f", group = "Format" },
+        {
+            "<leader>n",
+            "<cmd>Neotree<cr>",
+            desc = "Neotree",
+            icon = MiniIcons.get("filetype", "neo-tree")
+        },
+        { "<leader>t", group = "Telescope" },
+        { "<leader>l", "<cmd>Lazy<cr>", desc = "Lazy" },
+    }
+)
 
 vim.api.nvim_create_autocmd(
     "BufEnter",
