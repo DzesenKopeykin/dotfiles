@@ -1,4 +1,4 @@
-require("plugins.options.lualine")
+require("plugins.options")
 
 local plugin_specs = {
     {
@@ -6,29 +6,30 @@ local plugin_specs = {
         -- make sure we load this during startup if it is your main colorscheme
         lazy = false,
         -- make sure to load this before all the other start plugins
-        priority = 1000
-    },
-    { 
-        "echasnovski/mini.icons",
-        version = false
+        priority = 1000,
     },
 	{
 		"smoka7/hop.nvim",
-		version = "v2",
-		opts = {
-			keys = "asdfghjklqwertyuiopzxcvbnm",
-		}
+		opts = { keys = "asdfghjklqwertyuiopzxcvbnm" },
 	},
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = lualine_options,
 	},
-	{
-		"akinsho/bufferline.nvim",
-		dependencies = "nvim-tree/nvim-web-devicons",
-		opts = {},
-	},
+    {
+        "stevearc/resession.nvim",
+        lazy = false,
+        opts = {},
+    },
+    {
+        "willothy/nvim-cokeline",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons",
+        },
+        opts = {},
+    },
 	{
 		"lewis6991/gitsigns.nvim",
 		opts = {},
@@ -50,7 +51,8 @@ local plugin_specs = {
 	},
 	{
 		"folke/which-key.nvim",
-        lazy = true
+        lazy = true,
+		dependencies = { "echasnovski/mini.icons" },
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -58,7 +60,7 @@ local plugin_specs = {
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = '0.1.6',
-		dependencies = { "nvim-lua/plenary.nvim" }
+		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 }
 

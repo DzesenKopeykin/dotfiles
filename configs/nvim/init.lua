@@ -2,6 +2,8 @@ require("globals")
 require("options")
 require("plugins.lazy")
 require("plugins.specs")
+require("plugins.configs")
+require("plugins.mappings")
 
 vim.cmd("colorscheme kanagawa")
 
@@ -36,6 +38,7 @@ vim.keymap.set("n", "<leader>tg", builtin.live_grep, { desc="Live Grep"})
 vim.keymap.set("n", "<leader>tb", builtin.buffers, { desc="Buffers"})
 vim.keymap.set("n", "<leader>th", builtin.help_tags, { desc="Help Tags"})
 
+local resession = require("resession")
 require("mini.icons").setup()
 local which_key = require("which-key")
 which_key.add(
