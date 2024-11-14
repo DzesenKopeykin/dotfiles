@@ -62,6 +62,16 @@ local plugin_specs = {
 		tag = '0.1.6',
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
+    {
+        "derektata/lorem.nvim",
+        config = function()
+            require('lorem').opts(lorem_options)
+        end
+    },
+    {
+        "numToStr/Comment.nvim",
+        opts = {},
+    },
 }
 
 require("lazy").setup(plugin_specs)
