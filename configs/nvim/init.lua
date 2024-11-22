@@ -1,5 +1,6 @@
 require("globals") 
 require("options")
+require("plugins.globals")
 require("plugins.lazy")
 require("plugins.specs")
 require("plugins.configs")

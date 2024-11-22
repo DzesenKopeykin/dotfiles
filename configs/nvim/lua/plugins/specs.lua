@@ -69,8 +69,7 @@ local plugin_specs = {
         end
     },
     {
-        "numToStr/Comment.nvim",
-        opts = {},
+        "b3nj5m1n/kommentary",
     },
 }
 
