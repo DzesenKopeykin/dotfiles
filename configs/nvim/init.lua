@@ -73,3 +73,6 @@ vim.api.nvim_create_autocmd(
     "BufEnter",
     {pattern = {"*.html", "*.htmldjango"}, command = "echo 'Entering a html file'"}
 )
+
+vim.keymap.set("", "H", "^")
+vim.keymap.set("", "L", "$")
