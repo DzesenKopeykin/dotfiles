@@ -20,6 +20,7 @@
 - python-pylint
 - python-flake8-black python-flake8-docstrings python-flake8-isort 
 - vint
+- tree-sitter-cli
 - nvim ))
 
 ## Plugins
