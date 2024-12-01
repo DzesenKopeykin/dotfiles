@@ -10,6 +10,8 @@
 - link:
     ~/.dotfiles:
       path: ""
+    ~/.gitconfig:
+      path: configs/git/gitconfig
     ~/.config/qtile:
       path: configs/qtile
       force: true
